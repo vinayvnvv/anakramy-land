@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #171717;
+  --primary: #031642;
+  --primary-light: #0e56ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--primary);
+  font-family: var(--font-body), Helvetica, sans-serif;
+}
+
+.bg-code-scroll {
+  background-image: url(https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/hands-of-a-programmer.jpg);
+  background-position-y: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--primary-light) 0%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cs_shape {
+  /* width: 514px;
+  height: 514px; */
+  border-radius: 50%;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(224, 24, 255, 0.5)), to(rgba(134, 14, 153, 0.5))); */
+  background: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--primary-light) 100%
+  );
+  -webkit-filter: blur(250px);
+  filter: blur(250px);
+  position: absolute;
+  pointer-events: none;
+}
+.shapes_1 {
+  right: 0px;
+  top: 190px;
+}
+.shapes_2 {
+  left: 0px;
+  top: 0;
+}
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
